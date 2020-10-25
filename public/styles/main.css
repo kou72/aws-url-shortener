@@ -1,0 +1,36 @@
+/* Fade In Animation */
+body {
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Layout */
+.mdl-layout__header {
+  height: 70px;
+}
+.mdl-layout__header h3 {
+  top: 50%;
+  margin: auto auto;
+  width: 80%;
+}
+.mail-form-card {
+  width: 50%;
+  text-align: center;
+  margin: 70px auto;
+}
+.mdl-textfield {
+  width: 100%;
+}
+.mdl-button {
+  width: 90%;
+}
+.mdl-js-snackbar {
+  width: 100%;
+}
