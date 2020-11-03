@@ -27,13 +27,12 @@ UrlShortner.prototype.shortenUrl = async function (e) {
     const response = await fetch(apiurl, param)
     if (!response.ok) throw "ok propertyi is false"
     const body = await response.json()
-    console.log(body)
     this.output.value = body
     this.successSnackbar();
 
   } catch (err) {
-    this.errorSnackbar();
     console.log(err)
+    this.errorSnackbar();
   }
 };
 
