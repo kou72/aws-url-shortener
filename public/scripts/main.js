@@ -17,7 +17,7 @@ function UrlShortner() {
 // Shorten the URL
 UrlShortner.prototype.shortenUrl = async function (e) {
   e.preventDefault();
-  const apiurl = "https://4wstaoc5s6.execute-api.ap-northeast-1.amazonaws.com/post"
+  const apiurl = "apigateway URL"
   const param = {
     method: "POST",
     mode: "cors",
@@ -28,6 +28,7 @@ UrlShortner.prototype.shortenUrl = async function (e) {
     if (!response.ok) throw "ok propertyi is false"
     const body = await response.json()
     this.output.value = body
+    this.output.focus()
     this.successSnackbar();
 
   } catch (err) {
